@@ -1,8 +1,10 @@
+import Item from "./components/Item";
 
 
 function App() {
 
     return (
+    <>
     <div className="w-[94.3%] m-auto my-[24px]">
         <div className="w-[132px] h-[70px] bg-contain top-logo m-auto mb-[30px]"></div>
         <div className="h-[50px] flex justify-between items-center px-[16px] bg-[#00AC73] rounded-[15px] mb-[24px]">
@@ -27,6 +29,15 @@ function App() {
         </div>
         <p className="text-[32px] font-bold text-center mt-[50px] mb-[6px]">Популярные товары</p>
     </div>
+    <div className="bg-[#f2f2f2]">
+    <div className="w-[94.3%] m-auto py-[50px] bg-[#f2f2f2]">
+      <div className="w-[95%] grid grid-cols-2 m-auto gap-[12px]">
+        <Item/>
+        <Item/>
+      </div>
+    </div>
+    </div>
+    </>
     )
 }
 
