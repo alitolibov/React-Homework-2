@@ -1,6 +1,6 @@
 const Item = () => {
    return ( 
-      <div className="h-[258px] rounded-[15px] shadow-[0_0_0_20px_rgba(0, 0, 0, 0.12)] flex flex-col justify-between px-[16px] py-[16px] bg-[#ffffff]">
+      <div className="h-[258px] rounded-[15px] shadow-[0_0_0_20px_#e0e0e012] flex flex-col justify-between px-[16px] py-[16px] bg-[#ffffff]">
          <div className="flex flex-col gap-[8px]">
             <div className="h-[140px] w-full bg-[#ffffff] relative">
             <div className="kleksan bg-contain h-full w-full bg-contain bg-no-repeat bg-center"></div>
