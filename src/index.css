@@ -14,7 +14,7 @@
    background-image: url('../public/logo-zak-pharmacy\ 1\ \(1\).png');
 }
 .search{
-   background-image: url(../public/Иконка.png);
+   background-image: url('../public/Иконка.png');
 }
 .rus{
    background-image: url('../public/Русский\ \(1\).png');
@@ -23,11 +23,17 @@
    background-image: url('../public/img-bottom.png');
 }
 .bag{
-   background-image: url(../public/bg.png);
+   background-image: url('../public/bg.png');
 }
 .kleksan{
    background-image: url('../public/kleksan.png');
 }
 .bigbg{
    background-image: url('../public/bigbg.png');
+}
+.bgfoot{
+   background-image: url('../public/2\ 421.png');
+}
+.imges{
+   background-image: url('../public/social\ media.png');
 }
