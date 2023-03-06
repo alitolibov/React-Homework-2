@@ -5,21 +5,37 @@ function App() {
 
     return (
     <>
-    <div className="w-[94.3%] m-auto my-[24px]">
-    <div className="w-[132px] h-[70px] bg-contain top-logo m-auto mb-[30px]"></div>
+    <div className="w-[94.3%] m-auto my-[24px] md:w-[96.3%]">
+    <div className="w-[132px] h-[70px] bg-contain top-logo m-auto mb-[30px] md:hidden"></div>
     <div
-        className="h-[50px] flex justify-between items-center px-[16px] bg-[#00AC73] rounded-[15px] mb-[24px]">
+        className="h-[50px] w-full flex justify-between items-center px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:hidden">
         <p className="text-[12px] text-[#ffffff]">Введите название товара или заболевания</p>
-        <div className="search w-[24px] h-[24px]"></div>
+        <div className="search w-[20px] h-[20px]"></div>
     </div>
-    <div className="flex justify-between h-[50px] mb-[60px]">
+    <div className="flex justify-between h-[50px] mb-[60px] w-full md:hidden">
         <div
-            className="h-full flex items-center gap-[10px] bg-[#00AC73] rounded-[15px] px-[13px]">
+            className="h-full flex items-center gap-[10px] bg-[#00AC73] rounded-[15px] px-[13px] md:hidden">
             <div className="rus bg-contain w-[24px] h-[24px]"></div>
             <div className="bottomIcon w-[24px] h-[24px]"></div>
         </div>
-        <div className="h-full flex items-center bg-[#00AC73] rounded-[15px] px-[21px]">
+        <div className="h-full flex items-center bg-[#00AC73] rounded-[15px] px-[21px] md:hidden">
             <p className="text-[#ffffff]">Войти/Регистрация</p>
+        </div>
+    </div>
+    <div className="hidden md:flex gap-[10px]">
+    <div className="w-[122px] h-[65px] bg-contain top-logo m-auto mb-[0px] bg-no-repeat"></div>
+    <div
+        className="h-[50px] w-full flex justify-between items-center px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:mb-[0px] gap-[10px] h-[48px]">
+        <p className="text-[12px] text-[#ffffff]">Введите название товара или заболевания</p>
+        <div className="search w-[20px] h-[20px]"></div>
+    </div>
+    <div
+            className="sm:h-[48px] hidden gap-[8px] bg-[#00AC73] rounded-[15px] px-[12px] md:flex items-center">
+            <div className="rus bg-contain w-[22px] h-[22px]"></div>
+            <div className="bottomIcon w-[20px] h-[20px]"></div>
+        </div>
+        <div className="sm:h-[48px] hidden bg-[#00AC73] rounded-[15px] px-[18px] md:flex items-center">
+            <p className="text-[#ffffff] text-[15px]">Войти/Регистрация</p>
         </div>
     </div>
     <div
@@ -37,7 +53,12 @@ function App() {
 </div>
 <div className="bg-[#f2f2f2]">
     <div className="w-[94.3%] m-auto py-[50px] bg-[#f2f2f2]">
-        <div className="w-[95%] grid grid-cols-2 m-auto gap-[12px]">
+        <div className="sm:w-[95%] grid grid-cols-2 m-auto gap-[12px] md:hidden">
+            <Item/>
+            <Item/>
+        </div> 
+        <div className="sm:w-[95%] hidden grid-cols-3 m-auto gap-[12px] md:grid">
+            <Item/>
             <Item/>
             <Item/>
         </div>
@@ -47,7 +68,18 @@ function App() {
     <button
         className="py-[19px] px-[54px] m-auto mb-[50px] text-[#ffffff] block bg-[#00AC73] rounded-[15px] cursor-pointer">Подробнее</button>
     <p className="text-[32px] font-bold text-center mt-[50px] mb-[30px]">Часто покупают</p>
-    <div className="w-[95%] grid grid-cols-2 m-auto mb-[30px] gap-[12px]">
+    <div className="w-[95%] grid grid-cols-2 m-auto mb-[30px] gap-[12px] md:hidden">
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
+    </div>
+    <div className="w-[95%] hidden grid-cols-3 m-auto mb-[30px] gap-[12px] md:grid">
+        <Item/>
         <Item/>
         <Item/>
         <Item/>
@@ -60,8 +92,8 @@ function App() {
     <button
         className="py-[19px] px-[54px] m-auto mb-[50px] text-[#ffffff] block bg-[#00AC73] rounded-[15px] cursor-pointer">Подробнее</button>
     <p className="text-[32px] font-bold text-center mt-[50px] mb-[30px]">О нас</p>
-    <div className="bigbg w-full h-[404px] bg-contain mb-[30px] bg-no-repeat"></div>
-    <p className="text-[24px] leading-[25px] mb-[24px]">Наши товары делают жизнь
+    <div className="bigbg w-full h-[404px] bg-contain mb-[30px] bg-no-repeat md:m-auto w-[404px]"></div>
+    <p className="text-[24px] leading-[25px] mb-[24px] md:mt-[30px]">Наши товары делают жизнь
         комфортной и безопасной. Высокий уровень сервиса и понимания к каждому
         покупателю.</p>
     <div className="flex flex-col gap-[16px] mb-[50px]">
@@ -84,12 +116,13 @@ function App() {
         </div>
     </div>
     <div
-        className="h-[438px] bg-[#00504D] rounded-[30px] py-[24px] px-[33px] flex flex-col">
+        className="h-[438px] bg-[#00504D] rounded-[30px] py-[24px] px-[33px] flex flex-col md:hidden">
         <p className="text-[#ffffff] text-[24px] leading-[29px] text-center">Пользуйтесь нашим приложением для большего удобства</p>
         <div className="h-[303px] flex items-center justify-center">
             <p className="text-[#ffffff] text-[24px]">Фото</p>
         </div>
     </div>
+    <div className="appbg w-full h-[220px] bg-contain bg-no-repeat hidded md:block"></div>
 </div>
 <div className="bg-[#00AC73]">
     <div className="w-[94.3%] m-auto py-[24px] flex flex-col gap-[24px]">
