@@ -1,6 +1,7 @@
 import Item from "./components/Item";
 
 
+
 function App() {
 
     return (
@@ -94,7 +95,7 @@ function App() {
     <p className="text-[32px] font-bold text-center mt-[50px] mb-[30px]">О нас</p>
     <div className="bigbg w-full h-[404px] bg-contain mb-[30px] bg-no-repeat md:m-auto w-[404px]"></div>
     <p className="text-[24px] leading-[25px] mb-[24px] md:mt-[30px]">Наши товары делают жизнь
-        комфортной и безопасной. Высокий уровень сервиса и понимания к каждому
+        комфортной и безопасной. Высокий уровень сервиса и понимание к каждому
         покупателю.</p>
     <div className="flex flex-col gap-[16px] mb-[50px]">
         <div className="flex flex-col gap-[8px]">
