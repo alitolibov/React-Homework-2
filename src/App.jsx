@@ -1,4 +1,6 @@
+import Dropdown from "./components/Dropdown";
 import Item from "./components/Item";
+
 
 
 function App() {
@@ -13,14 +15,11 @@ function App() {
         <div className="search w-[20px] h-[20px]"></div>
     </div>
     <div className="flex justify-between h-[50px] mb-[60px] w-full md:hidden">
-        <div
-            className="h-full flex items-center gap-[10px] bg-[#00AC73] rounded-[15px] px-[13px] md:hidden">
-            <div className="rus bg-contain w-[24px] h-[24px]"></div>
-            <div className="bottomIcon w-[24px] h-[24px]"></div>
-        </div>
+        <Dropdown/>
         <div className="h-full flex items-center bg-[#00AC73] rounded-[15px] px-[21px] md:hidden">
             <p className="text-[#ffffff]">Войти/Регистрация</p>
         </div>
+
     </div>
     <div className="hidden md:flex gap-[10px]">
     <div className="w-[122px] h-[65px] bg-contain top-logo m-auto mb-[0px] bg-no-repeat"></div>
@@ -122,7 +121,7 @@ function App() {
             <p className="text-[#ffffff] text-[24px]">Фото</p>
         </div>
     </div>
-    <div className="appbg w-full h-[220px] bg-contain bg-no-repeat hidded md:block"></div>
+    <div className="appbg w-full h-[220px] bg-contain bg-no-repeat hidden md:block"></div>
 </div>
 <div className="bg-[#00AC73]">
     <div className="w-[94.3%] m-auto py-[24px] flex flex-col gap-[24px]">
