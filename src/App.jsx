@@ -8,6 +8,7 @@ function App() {
     return (
     <>
     <div className="w-[94.3%] m-auto my-[24px] md:w-[96.3%]">
+    <div className="">
     <div className="w-[132px] h-[70px] bg-contain top-logo m-auto mb-[30px] md:hidden"></div>
     <div
         className="h-[50px] w-full flex justify-between items-center px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:hidden">
@@ -21,7 +22,8 @@ function App() {
         </div>
 
     </div>
-    <div className="hidden md:flex gap-[10px]">
+    </div>
+    {/* <div className="hidden md:flex gap-[10px]">
     <div className="w-[122px] h-[65px] bg-contain top-logo m-auto mb-[0px] bg-no-repeat"></div>
     <div
         className="h-[50px] w-full flex justify-between items-center px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:mb-[0px] gap-[10px] h-[48px]">
@@ -36,7 +38,7 @@ function App() {
         <div className="sm:h-[48px] hidden bg-[#00AC73] rounded-[15px] px-[18px] md:flex items-center">
             <p className="text-[#ffffff] text-[15px]">Войти/Регистрация</p>
         </div>
-    </div>
+    </div> */}
     <div
         className="h-[300px] bag relative bg-no-repeat overflow-hidden rounded-[30px] bg-cover">
         <div
