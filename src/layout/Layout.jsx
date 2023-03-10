@@ -9,7 +9,7 @@ const Layout = () => {
       <div className="w-[94.3%] m-auto my-[24px] md:w-[96.3%]">
     <div className="md:flex md:items-center md:justify-between md:w-full">
     <div className="w-[132px] bg-no-repeat h-[70px] bg-contain top-logo sm:m-auto mb-[30px] md:mb-[0px] md:h-[50px] md:my-[0px] w-[95px] md:mx-[0px] lg:w-[132px] lg:h-[60px] "></div>
-    <div className="h-[50px] px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:my-[0px] md:w-[300px] lg:w-[400px]">
+    <div className="h-[50px] px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:my-[0px] md:w-[300px] lg:wlex flex-col gap-[24px]-[400px]">
         <form name="form" className="w-full flex items-center gap-[24px] h-full">
             <input type="text" placeholder="Введите название товара или заболевания" name="search" className="bg-transparent w-full outline-none text-[#ffffff] text-[12px] placeholder:text-[#ffffff]"/>
             <button>
