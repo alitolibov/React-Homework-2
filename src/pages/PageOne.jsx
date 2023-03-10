@@ -58,7 +58,7 @@ const PageOne = () => {
     <button
         className="py-[19px] px-[54px] m-auto mb-[50px] text-[#ffffff] block bg-[#00AC73] rounded-[15px] cursor-pointer">Подробнее</button>
     <p className="text-[32px] font-bold text-center mt-[50px] mb-[30px]">О нас</p>
-    <div className="bigbg w-full h-[404px] bg-contain mb-[30px] bg-no-repeat md:m-auto w-[404px]"></div>
+    <div className="bigbg w-full h-[404px] bg-contain mb-[30px] bg-no-repeat md:m-auto md:w-[404px]"></div>
     <p className="text-[24px] leading-[25px] mb-[24px] md:mt-[30px]">Наши товары делают жизнь
         комфортной и безопасной. Высокий уровень сервиса и понимание к каждому
         покупателю.</p>
@@ -88,7 +88,7 @@ const PageOne = () => {
             <p className="text-[#ffffff] text-[24px]">Фото</p>
         </div>
     </div>
-    <div className="appbg w-full h-[220px] bg-contain bg-no-repeat hidden md:block"></div>
+    <div className="appbg w-[738px] h-[220px] m-auto bg-contain bg-no-repeat hidden md:block"></div>
 </div>
    </>
    );
