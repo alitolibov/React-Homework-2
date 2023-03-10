@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
+import SearchAppBar from "../components/SearchAppBar";
 
 const Layout = () => {
    return ( 
@@ -7,11 +8,12 @@ const Layout = () => {
       <div className="w-[94.3%] m-auto my-[24px] md:w-[96.3%]">
     <div className="">
     <div className="w-[132px] h-[70px] bg-contain top-logo m-auto mb-[30px] md:hidden"></div>
-    <div
+    {/* <div
         className="h-[50px] w-full flex justify-between items-center px-[12px] bg-[#00AC73] rounded-[15px] mb-[24px] md:hidden">
         <p className="text-[12px] text-[#ffffff]">Введите название товара или заболевания</p>
         <div className="search w-[20px] h-[20px]"></div>
-    </div>
+    </div> */}
+    <SearchAppBar/>
     <div className="flex justify-between h-[50px] mb-[60px] w-full md:hidden">
         <Dropdown/>
         <div className="h-full flex items-center bg-[#00AC73] rounded-[15px] px-[21px] md:hidden">
